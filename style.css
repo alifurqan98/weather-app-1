@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagbanwa&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 27, 27, 0.839);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 1;
+}
+
+.weather{
+    /* background-color: white; */
+    color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 5px;
+}
+.weather>div{
+    margin: 0.3rem;
+}
+
+.weather1{
+    font-size: 5rem;
+}
+
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 1rem
+}
+.weather3 span{
+    margin-left: 1rem;
+
+}
+.weather3 img{
+    width:7rem;
+    margin-top: -6rem;
+}
+
+nav{
+    height: 100px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.75);
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    background-color: rgba(180, 177, 177, 0.103);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr; 
+}
+
+.search{
+    padding: 0.5rem 0;
+    background-color: transparent;
+
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 98%;
+    font-size:1.5rem ;
+    font-family: "Roboto",sans-serif;
+}
+
+button{
+    font-size: 1.2rem;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 0 100px 100px 0;
+    padding: 1rem;
+    font-weight: 550;
+    outline: none;
+    cursor: pointer;
+}
